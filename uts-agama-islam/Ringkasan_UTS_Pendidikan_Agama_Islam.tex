@@ -1,0 +1,334 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- Typography & Layout Standards (Anti-Slop & High Density) ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[scaled=0.90]{helvet}
+\usepackage{courier}
+\usepackage[top=1.3cm, bottom=1.4cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage{microtype}
+\emergencystretch=3em
+\hfuzz=1.5pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt plus 0.8pt minus 0.6pt}
+
+% --- Math & Symbols ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables & Lists ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlist{itemsep=1.5pt, topsep=2pt, parsep=0pt, leftmargin=3.8mm}
+
+% --- Colors (UGM Academic & Islamic Gold/Green Palette) ---
+\usepackage[dvipsnames,table]{xcolor}
+\definecolor{ugmblue}{RGB}{16, 44, 87}
+\definecolor{navyaccent}{RGB}{24, 77, 138}
+\definecolor{ugmgold}{RGB}{197, 148, 47}
+\definecolor{islamgreen}{RGB}{22, 101, 52}
+\definecolor{tealbox}{RGB}{13, 110, 110}
+\definecolor{alertred}{RGB}{166, 25, 46}
+\definecolor{bgcode}{RGB}{248, 246, 255}
+\definecolor{bgsoft}{RGB}{247, 249, 252}
+\definecolor{bgwarning}{RGB}{255, 251, 235}
+\definecolor{textdark}{RGB}{33, 37, 41}
+
+% --- Boxes & Styling ---
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{conceptbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgsoft,
+  colframe=ugmblue,
+  arc=2mm,
+  boxrule=0.8pt,
+  fonttitle=\bfseries\small\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=ugmblue, arc=1.2mm, boxrule=0pt},
+  title={#1},
+  top=3mm, bottom=2.5mm, left=2.5mm, right=2.5mm
+}
+
+\newtcolorbox{dalilbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgcode,
+  colframe=islamgreen,
+  arc=2mm,
+  boxrule=0.8pt,
+  fonttitle=\bfseries\small\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=islamgreen, arc=1.2mm, boxrule=0pt},
+  title={#1},
+  top=3mm, bottom=2.5mm, left=2.5mm, right=2.5mm
+}
+
+\newtcolorbox{warningbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgwarning,
+  colframe=alertred,
+  arc=2mm,
+  boxrule=0.8pt,
+  fonttitle=\bfseries\small\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=alertred, arc=1.2mm, boxrule=0pt},
+  title={#1},
+  top=3mm, bottom=2.5mm, left=2.5mm, right=2.5mm
+}
+
+\newtcolorbox{soalbox}[1][]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=navyaccent,
+  arc=2mm,
+  boxrule=0.8pt,
+  fonttitle=\bfseries\small\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=navyaccent, arc=1.2mm, boxrule=0pt},
+  title={#1},
+  top=3mm, bottom=2.5mm, left=2.5mm, right=2.5mm
+}
+
+% --- Headers & Footers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\bfseries\color{ugmblue}Pendidikan Agama Islam (UNKU260001 / Kelas PAI05)}
+\fancyhead[R]{\small\color{gray}Master Cheat-Sheet UTS Gasal 2026/2027}
+\fancyfoot[L]{\small\color{gray}Hafidz Rizqullah Prasetya (NIM: 535493) -- TRPL SV UGM}
+\fancyfoot[R]{\small\bfseries\color{ugmblue}\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navyaccent,
+  urlcolor=tealbox,
+  citecolor=ugmblue
+}
+
+\begin{document}
+
+% --- TITLE HEADER ---
+\begin{center}
+  {\LARGE\bfseries\color{ugmblue}RINGKASAN MASTER UTS PENDIDIKAN AGAMA ISLAM (PAI)}\\[3pt]
+  {\small\bfseries\color{navyaccent}Universitas Gadjah Mada $\bullet$ Sekolah Vokasi $\bullet$ Sarjana Terapan TRPL}\\[2pt]
+  {\footnotesize\color{textdark}\textbf{Waktu Ujian:} Senin, 12 Oktober 2026 | 15:15 -- 16:30 WIB | \textbf{Ruang:} R. Kemanusiaan A. 403 (Kursi 8)}
+\end{center}
+\vspace{-2mm}
+\hrule height 1pt
+\vspace{3mm}
+
+% =========================================================================
+% SEKSI 1: HAKIKAT KETUHANAN
+% =========================================================================
+\section*{\color{ugmblue}\Large 1. Hakikat Ketuhanan (Falsafah \& Teologi Tauhid)}
+
+\begin{conceptbox}[1.1 Makna Semantik Tuhan: Al-Ilah vs Ar-Rabb]
+Dalam Al-Qur'an dan teologi Islam, pemahaman tentang Tuhan berdiri di atas dua poros semantik utama:
+\begin{itemize}
+  \item \textbf{Al-Ilah (\textit{Sesembahan Mutlak}):} Dzat yang digandrungi hati, dicintai di atas segalanya, ditaati tanpa reserve, ditakuti murka-Nya, dan menjadi muara ibadah. Segala entitas yang kita serahkan kepatuhan absolut dan cinta tertinggi kepadanya secara \textit{de facto} menjadi tuhan (\textit{ilah}).
+  \item \textbf{Ar-Rabb (\textit{Pencipta \& Pengatur}):} Dzat yang menciptakan (\textit{Al-Khaliq}), memiliki (\textit{Al-Malik}), memelihara, memberi rezeki, dan mengatur tata hukum alam semesta (\textit{Al-Mudabbir}).
+\end{itemize}
+\end{conceptbox}
+
+\begin{conceptbox}[1.2 Tiga Argumen Rasional Keberadaan Tuhan (First Principles)]
+Islam mewajibkan keimanan berbasis dalil (\textit{burhan}) dan fitrah logis, bukan dogma buta:
+\begin{enumerate}
+  \item \textbf{Argumen Kosmologis (Kalam / Kausalitas):} Setiap sesuatu yang ada secara kontinjen (memiliki permulaan) niscaya memiliki sebab pencipta. Alam semesta terbukti memiliki permulaan (teori perluasan ruang \& Termodinamika II). Regresi sebab tanpa henti ke masa lampau (\textit{tasalsul}) atau lingkaran sebab-akibat (\textit{daur}) adalah mustahil secara logika. Maka pasti ada Penyebab Pertama Yang Mutlak (\textit{Wajib al-Wujud / Uncaused First Cause}). (\textbf{QS. At-Thur [52]: 35--36}).
+  \item \textbf{Argumen Teleologis (Desain \& Fine-Tuning):} Keteraturan hukum alam yang luar biasa presisi (konstanta gravitasi, gaya elektromagnetik, struktur molekuler DNA) membuktikan adanya Kehendak dan Kecerdasan Tak Terbatas. Keteraturan informasi kompleks mustahil tercipta dari kebetulan acak tanpa orkestrator (\textbf{QS. Ali 'Imran [3]: 190--191}).
+  \item \textbf{Argumen Fitrah (Primordial Consciousness):} Manusia memiliki dorongan transendensi spiritual alami. Dalam situasi krisis eksistensial ekstrem, naluri terdalam manusia otomatis berteriak mencari Pertolongan Tunggal Yang Maha Kuasa (\textbf{QS. Al-A'raf [7]: 172}).
+\end{enumerate}
+\end{conceptbox}
+
+\begin{conceptbox}[1.3 Tiga Pilar Tauhid Ahlus Sunnah wal Jama'ah]
+\begin{tabularx}{\textwidth}{l Y Y}
+\toprule
+\textbf{Pilar Tauhid} & \textbf{Definisi \& Obyek} & \textbf{Implikasi Faktual} \\
+\midrule
+\textbf{Tauhid Rububiyah} & Mengesakan Allah dalam perbuatan-Nya (\textit{Af'alullah}): mencipta, memiliki, mengatur semesta. & Mengakui Allah satu-satunya Penguasa kosmos. Kaum musyrik Quraisy mengakui ini (QS. Luqman: 25) namun belum otomatis berislam. \\
+\addlinespace
+\textbf{Tauhid Uluhiyah} & Mengesakan Allah dalam ibadah hamba (\textit{Af'alul 'Ibad}): doa, tawakal, takut, cinta, dan ketaatan hukum mutlak. & Inti dakwah seluruh nabi dan misi kalimat \textit{Laa ilaha illallah}. Menolak segala bentuk penyembahan kepada berhala, materi, atau thaghut. \\
+\addlinespace
+\textbf{Tauhid Asma' wa Sifat} & Mengimani nama dan sifat Allah sesuai Al-Qur'an dan Sunnah shahih. & Menerapkan kaidah: Tanpa \textit{Tahrif} (mengubah makna), tanpa \textit{Ta'thil} (menolak sifat), tanpa \textit{Takyif} (menanyakan caranya), dan tanpa \textit{Tamtsil} (menyerupakan dengan makhluk). (\textbf{QS. Asy-Syura: 11}). \\
+\bottomrule
+\end{tabularx}
+\end{conceptbox}
+
+\begin{warningbox}[1.4 Kritik Terhadap Teori Sosiologi Evolusi Agama]
+Sosiolog Barat (E.B. Tylor, Auguste Comte) menyatakan agama ber-evolusi dari \textit{Animisme $\rightarrow$ Dinamisme $\rightarrow$ Politeisme $\rightarrow$ Henoteisme $\rightarrow$ Monoteisme}. \\
+\textbf{Perspektif Wahyu:} Teori evolusi ini keliru. Manusia pertama (Nabi Adam AS) diciptakan dalam keadaan \textbf{Monoteis Murni (Bertauhid)}. Politeisme dan animisme bukanlah tahap awal evolusi, melainkan \textbf{deviasi dan kemunduran spiritual} yang baru muncul berabad-abad kemudian pada zaman kaum Nabi Nuh AS akibat pengkultusan orang shalih.
+\end{warningbox}
+
+% =========================================================================
+% SEKSI 2: HAKIKAT IMAN & TRILOGI ISLAM
+% =========================================================================
+\section*{\color{ugmblue}\Large 2. Hakikat Iman \& Integrasi Arkanud Din}
+
+\begin{conceptbox}[2.1 Definisi \& Karakteristik Iman]
+Menurut konsensus Ahlus Sunnah wal Jama'ah, iman mencakup tiga pilar tak terpisahkan:
+$$\mathbf{Iman = Tashdiq\ bil\ Qalbi\ (Hati) + Iqrar\ bil\ Lisan\ (Ucapan) + 'Amal\ bil\ Arkan\ (Perbuatan)}$$
+\begin{itemize}
+  \item \textbf{Dinamika Iman:} \textit{Al-Imaanu yazidu wa yanqus} (Iman dapat bertambah dan berkurang). Bertambah dengan ketaatan, dan tereduksi oleh kemaksiatan.
+  \item \textbf{Karakteristik Mukmin Sejati:} Menjadikan ridha Allah di atas penilaian manusia, tawakal setelah ikhtiar optimal, menjaga integritas amanah, sabar saat krisis, dan bersyukur saat lapang.
+\end{itemize}
+\end{conceptbox}
+
+\begin{dalilbox}[2.2 Trilogi Arsitektur Agama (Hadits Jibril)]
+Dalam Hadits Jibril yang diriwayatkan Umar bin Khattab RA, bangunan agama Islam terbagi dalam 3 tingkatan harmonis:
+\begin{enumerate}
+  \item \textbf{Islam (Dimensi Lahiriah / Syariat):} 5 Rukun Islam (Syahadat, Shalat, Zakat, Puasa, Haji). Menata hukum, ritual, dan perilaku sosial empiris.
+  \item \textbf{Iman (Dimensi Batiniah / Akidah):} 6 Rukun Iman (Allah, Malaikat, Kitab, Rasul, Hari Akhir, Qadha \& Qadar). Fondasi filosofis dan epistemologi batin.
+  \item \textbf{Ihsan (Dimensi Kesadaran Puncak / Spiritualitas \& Akhlak):} \textit{"Engkau beribadah kepada Allah seakan-akan melihat-Nya, dan jika engkau tidak mampu melihat-Nya, maka sesungguhnya Dia melihatmu."} (Prinsip \textbf{Muraqabatullah} / kesadaran diawasi Tuhan secara real-time).
+\end{enumerate}
+\end{dalilbox}
+
+% =========================================================================
+% SEKSI 3: HAKIKAT SYAHADAT (SYAHADATAIN)
+% =========================================================================
+\section*{\color{ugmblue}\Large 3. Hakikat Syahadat (Syahadatain)}
+
+\begin{conceptbox}[3.1 Struktur Gramatikal: Laa Ilaha Illallah]
+Kalimat syahadat tauhid berdiri di atas dua rukun mutlak:
+\begin{itemize}
+  \item \textbf{An-Nafyu (Negasi Total -- \textit{Laa Ilaha}):} Meruntuhkan dan menolak seluruh bentuk sesembahan, ideologi tirani, berhala materi, dan hawa nafsu dari takhta ketuhanan.
+  \item \textbf{Al-Itsbat (Afirmasi Mutlak -- \textit{Illallah}):} Menetapkan hak peribadahan dan loyalitas puncak HANYA untuk Allah semata.
+  \item \textbf{Tuntutan Syahadat Rasul (\textit{Muhammad Rasulullah}):} (1) Membenarkan beritanya (\textit{Tashdiquhu}), (2) Mentaati perintahnya (\textit{Itha'atuhu}), (3) Menjauhi larangannya (\textit{Ijtinabuhu}), (4) Beribadah hanya sesuai syariatnya (\textit{Ittiba'}, anti-bid'ah).
+\end{itemize}
+\end{conceptbox}
+
+\begin{conceptbox}[3.2 Tujuh Syarat Sah Syahadat (\textit{Syuruth Laa Ilaha Illallah})]
+Kalimat syahadat hanya bermanfaat jika memenuhi 7 syarat (harus dihafal):
+\begin{enumerate}
+  \item \textbf{Al-'Ilmu:} Mengetahui maknanya, menepis ketidaktahuan (\textit{al-jahl}). (QS. Muhammad: 19).
+  \item \textbf{Al-Yaqin:} Keyakinan mantap tanpa keraguan (\textit{as-syakk}). (QS. Al-Hujurat: 15).
+  \item \textbf{Al-Qabul:} Menerima sepenuhnya konsekuensi kalimat ini tanpa menolak.
+  \item \textbf{Al-Inqiyad:} Tunduk dan patuh menjalankan hukum-hukum Allah secara faktual. (QS. Luqman: 22).
+  \item \textbf{Ash-Shidq:} Kejujuran hati, bukan kepura-puraan orang munafik.
+  \item \textbf{Al-Ikhlas:} Memurnikan amal dari debu riya' dan kepentingan duniawi. (QS. Al-Bayyinah: 5).
+  \item \textbf{Al-Mahabbah:} Mencintai kalimat ini, mencintai Allah, Rasul-Nya, dan orang-orang beriman.
+\end{enumerate}
+\end{conceptbox}
+
+\begin{warningbox}[3.3 Pembatal-Pembatal Keislaman Utama (\textit{Nawaqidh Al-Islam})]
+\begin{itemize}
+  \item Melakukan syirik akbar dalam ibadah kepada Allah.
+  \item Menjadikan perantara kubur/makhluk yang disembah atau dimintai syafaat di luar syariat.
+  \item Tidak mengafirkan orang kafir yang jelas kekafirannya atau membenarkan ideologi sesat mereka.
+  \item Meyakini hukum buatan manusia lebih unggul atau setara dengan syariat Allah.
+  \item Mengolok-olok (\textit{istihza'}) Allah, ayat-ayat-Nya, atau sunnah Rasulullah SAW (QS. At-Taubah: 65--66).
+  \item Praktik sihir; Bersekutu dengan musuh untuk menghancurkan kaum muslimin; Berpaling total dari agama.
+\end{itemize}
+\end{warningbox}
+
+% =========================================================================
+% SEKSI 4: BAHAYA SYIRIK & KEMURNIAN TAUHID
+% =========================================================================
+\section*{\color{ugmblue}\Large 4. Bahaya Syirik \& Kemurnian Tauhid}
+
+\begin{conceptbox}[4.1 Definisi \& Klasifikasi Syirik]
+\textbf{Syirik} adalah menyamakan selain Allah dengan Allah dalam hal-hal yang menjadi hak khusus Allah (Rububiyah, Uluhiyah, Asma' wa Sifat). Terbagi menjadi:
+\begin{itemize}
+  \item \textbf{Syirik Akbar (Besar):} Mengeluarkan pelakunya dari Islam (\textit{murtad}), membatalkan seluruh amal hidup (\textit{ihbathul 'amal}), tidak diampuni jika mati tanpa taubat, dan kekal di neraka. \\
+  \textit{Bentuk:} Berdoa/menyembah makhluk ghaib, sesajen kepada jin, syirik ketaatan pada hukum yang menghalalkan perkara haram secara mutlak.
+  \item \textbf{Syirik Ashghar (Kecil):} Tidak mengeluarkan dari Islam, namun dosa besar di atas zina/pembunuhan, dan menggugurkan pahala amal yang dicampurinya. \\
+  \textit{Bentuk:} \textbf{Riya'} (beramal demi pujian manusia), \textbf{Sum'ah} (menceritakan amal demi status), bersumpah atas nama selain Allah, \textbf{Thiyarah} (percaya mitos kesialan hari/angka).
+  \item \textbf{Syirik Khafi (Tersembunyi):} Sangat halus dalam lintasan niat di hati, diibaratkan semut hitam merayap di atas batu hitam pada malam gelap gulita.
+\end{itemize}
+\end{conceptbox}
+
+\begin{dalilbox}[4.2 Lima Dampak Fatal Kehancuran Akibat Syirik]
+\begin{enumerate}
+  \item \textbf{Menghapus Seluruh Catatan Kebaikan:} QS. Az-Zumar [39]: 65 (\textit{"Jika engkau berbuat syirik, niscaya akan gugurlah amalmu dan engkau termasuk orang yang rugi."}).
+  \item \textbf{Dosa yang Tidak Diampuni jika Mati Tanpa Taubat:} QS. An-Nisa [4]: 48 \& 116.
+  \item \textbf{Diharamkan Masuk Surga \& Kekal di Neraka:} QS. Al-Ma'idah [5]: 72.
+  \item \textbf{Degradasi Martabat Insani:} Menjatuhkan manusia dari status khalifah mulia menjadi budak benda fana atau sesama manusia.
+  \item \textbf{Kehampaan Jiwa \& Teror Mental:} Menimbulkan paranoia batin karena bergantung pada entitas yang lemah (QS. Ali 'Imran: 151).
+\end{enumerate}
+\end{dalilbox}
+
+\begin{conceptbox}[4.3 Syirik Kontemporer di Era Digital \& Doa Benteng Akidah]
+\textbf{Wujud Modern:} Pemujaan materi/uang (\textit{money-ism}), percaya ramalan zodiak/tarot online, kepatuhan buta pada budaya pop/ideologi sekuler yang anti-Tuhan. \\
+\textbf{Doa Nabi Penangkal Syirik:} \textit{"Allahumma inni a'udzu bika an usyrika bika wa ana a'lam, wa astaghfiruka lima la a'lam"} (Ya Allah, aku berlindung kepada-Mu dari mempersekutukan-Mu sedangkan aku mengetahuinya, dan memohon ampun atas apa yang tidak kuketahui).
+\end{conceptbox}
+
+% =========================================================================
+% SEKSI 5: MATERI KELOMPOK (MANUSIA, SUMBER HUKUM, AKHLAK)
+% =========================================================================
+\section*{\color{ugmblue}\Large 5. Materi Presentasi Kelompok (Pengayaan UTS)}
+
+\begin{conceptbox}[5.1 Hakikat \& Eksistensi Manusia dalam Islam]
+\begin{itemize}
+  \item \textbf{Dua Dimensi Ciptaan:} Materi fisik (\textit{at-thin} / tanah) + Tiupan Ruh ilahi.
+  \item \textbf{Peran Ganda Eksistensial:}
+    \begin{enumerate}
+      \item \textbf{'Abdullah (Hamba Allah):} Tugas vertikal untuk mengabdi dan tunduk sepenuhnya pada aturan Allah (QS. Adz-Dzariyat: 56).
+      \item \textbf{Khalifatullah fil Ardh (Pengelola Bumi):} Tugas horizontal memakmurkan bumi, menguasai sains \& teknologi secara bertanggung jawab, dan menegakkan keadilan (QS. Al-Baqarah: 30).
+    \end{enumerate}
+\end{itemize}
+\end{conceptbox}
+
+\begin{conceptbox}[5.2 Epistemologi Sumber Hukum Islam]
+\begin{enumerate}
+  \item \textbf{Al-Qur'an:} Sumber primer kalamullah mukjizat mutlak.
+  \item \textbf{As-Sunnah (Hadits):} Fungsi terhadap Qur'an: \textit{Bayan Taqrir} (menguatkan), \textit{Bayan Tafsir} (merinci), \textit{Bayan Tasyri'} (menetapkan hukum baru).
+  \item \textbf{Ijtihad:} Penalaran metodologis ulama mujtahid:
+    \begin{itemize}
+      \item \textbf{Ijma':} Kesepakatan bulat para mujtahid umat Islam dalam satu masa.
+      \item \textbf{Qiyas:} Menganalogikan perkara baru dengan perkara lama karena kesamaan sebab hukum (\textit{'illat}) --- misal menganalogikan narkoba dengan khamr.
+      \item \textbf{Maslahah Mursalah:} Penetapan hukum demi kemaslahatan umum yang tidak bertentangan dengan nash (misal aturan rekayasa AI, HKI, UU lalu lintas).
+    \end{itemize}
+\end{enumerate}
+\end{conceptbox}
+
+\begin{conceptbox}[5.3 Trias Etika: Akhlak vs Moral vs Etika]
+\begin{tabularx}{\textwidth}{l Y Y Y}
+\toprule
+\textbf{Aspek} & \textbf{Akhlak} & \textbf{Moral} & \textbf{Etika} \\
+\midrule
+\textbf{Sumber} & Wahyu Allah (Al-Qur'an \& Sunnah) & Adat budaya \& kesepakatan sosial & Nalar kritis filsafat manusia \\
+\textbf{Sifat} & Absolut, universal, permanen & Relatif, lokal, dinamis & Teoretis, kritis, rasional \\
+\textbf{Motivasi} & Mencari ridha Allah (Bernilai Ibadah) & Kepatuhan sosial \& menjaga reputasi & Integritas logis / standar kode etik \\
+\bottomrule
+\end{tabularx}
+\end{conceptbox}
+
+% =========================================================================
+% SEKSI 6: BANK SOAL PREDIKSI UTS UGM
+% =========================================================================
+\section*{\color{ugmblue}\Large 6. Bank Soal Prediksi UTS UGM \& Kunci Analitis}
+
+\begin{soalbox}[Soal 1: Mengapa Musyrikin Quraisy Diperangi Padahal Percaya Allah?]
+\textbf{Pertanyaan:} Orang kafir Quraisy mengakui Allah yang menciptakan langit dan bumi (Tauhid Rububiyah). Mengapa Rasulullah SAW tetap menyatakan mereka musyrik dan memerangi mereka? \\
+\textbf{Jawaban Analitis:} Karena mereka menolak \textbf{Tauhid Uluhiyah}. Mereka tidak menjadikan Allah sebagai satu-satunya tujuan doa dan ibadah, melainkan menjadikan berhala (Latta, Uzza) sebagai perantara (\textit{wasilah}) untuk mendekatkan diri kepada Allah (QS. Az-Zumar: 3). Tauhid Rububiyah belum cukup menyelamatkan seseorang tanpa pemurnian Tauhid Uluhiyah.
+\end{soalbox}
+
+\begin{soalbox}[Soal 2: Dialektika Akal dan Wahyu Mengenai Ketuhanan]
+\textbf{Pertanyaan:} Apakah akal murni mampu mengetahui hakikat Tuhan tanpa wahyu? Jelaskan batasan akal! \\
+\textbf{Jawaban Analitis:} Akal mampu menyimpulkan \textbf{adanya} Pencipta melalui argumen kausalitas dan desain alam. Namun akal \textbf{tidak mampu} mengetahui rincian Dzat, nama-nama, sifat-sifat ghaib, serta syariat ibadah yang diridhai-Nya tanpa bimbingan \textbf{Wahyu}. Akal berfungsi memverifikasi dan memahami wahyu, bukan menghakimi atau membatalkan wahyu.
+\end{soalbox}
+
+\begin{soalbox}[Soal 3: Bahaya Riya' sebagai Syirik Ashghar]
+\textbf{Pertanyaan:} Mengapa Riya' disebut sebagai syirik kecil yang paling dikhawatirkan oleh Nabi SAW? \\
+\textbf{Jawaban Analitis:} Karena riya' menyerang motif batin yang halus (\textit{syirik khafi}), di mana seseorang melakukan amal ibadah dengan maksud mencari pujian makhluk. Allah Maha Kaya dari sekutu, sehingga amal yang terjangkit riya' ditolak mentah-mentah oleh Allah (\textit{ihbathul 'amal juz'i}) dan pelakunya menanggung dosa besar.
+\end{soalbox}
+
+\begin{soalbox}[Soal 4: Sintesis Peran Mahasiswa IT sebagai 'Abdullah dan Khalifah]
+\textbf{Pertanyaan:} Bagaimana mahasiswa rekayasa perangkat lunak mengaktualisasikan peran ganda \textit{'Abdullah} dan \textit{Khalifatullah}? \\
+\textbf{Jawaban Analitis:} Sebagai \textbf{'Abdullah}, mahasiswa IT menjaga integritas moral (tidak membangun sistem judi online, penipuan, atau pencurian data) dan mengorientasikan kerja koding sebagai ibadah. Sebagai \textbf{Khalifah}, ia memanfaatkan keahlian komputasi untuk menyelesaikan masalah peradaban, mengoptimalkan kemakmuran sosial, dan menegakkan transparansi publik.
+\end{soalbox}
+
+\end{document}
