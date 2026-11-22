@@ -3,7 +3,7 @@
 **Institusi:** Universitas Gadjah Mada — Sekolah Vokasi (TRPL)  
 **Target:** Ujian Tengah Semester (UTS) Gasal 2026/2027  
 **Waktu Ujian:** Senin, 12 Oktober 2026 | 15:15 – 16:30 WIB | R. Kemanusiaan A. 403  
-**Pendekatan:** First Principles, Teologi Ahlus Sunnah wal Jama'ah, Analogi Komputasi & Sistem (High-Density & Anti-Slop)
+**Pendekatan:** First Principles, Teologi Ahlus Sunnah wal Jama'ah, Analogi Komputasi & Sistem
 
 ---
 
